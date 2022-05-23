@@ -1,1 +1,298 @@
 @import "reset";
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: open sans;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    max-width: 1500px;
+    height: 62px;
+    border: 2px solid #c7c7c7;
+  
+}
+
+.cart {
+    width: 17px;
+    height: 20px;
+}
+
+.logo {
+    width: 119px;
+    height: 30px;
+}
+
+.title {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.title-section {
+    font-size: 32px;
+     
+}
+
+::placeholder {
+    color: #000000;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    max-width: 1350px;
+     
+}
+
+.filter {
+    width: 157px;
+}
+
+.products {
+    display: flex;
+    flex-basis: 55%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      
+}
+.item {
+    max-width: 195px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px;
+    
+}
+
+.product-condition {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-button {
+    width: 195px;
+    height: 33px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+
+
+.size-title {
+    margin-top: 30px;
+}
+.sizes {
+    margin-top: 20px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.check-size {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);   
+}
+
+
+#span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-size input:checked ~ .check-size {
+    border: 2px solid #00C0EE;
+}
+
+.container-size:hover input ~ .check-size  {
+    background-color: #ccc;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+}
+
+.color {
+    margin-bottom: 20px;
+}
+
+.price-title {
+    margin-top: 30px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    -webkit-appearance: none;
+
+}
+
+.container-size {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-size input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.container:hover input ~ .checkmark  {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #00C0EE;
+}
+
+.dropbtn {
+    background-color: #fff;;
+    color: #000;;
+    width: 142px;
+    height: 42px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000;;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 142px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #00C0EE}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #fff;;
+  }
+
+  .arrow {
+    border: solid #666666;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.load-more {
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+}
+  #button {
+      margin: 10px;
+      width: 175px;
+      height: 35px;
+      color: #fff;
+      background-color: #00C0EE;
+      border: none;
+      font-weight: 700;
+  }
+
+  .footer {
+      max-width: 1500px;
+      height: 33px;
+      color: #fff;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
